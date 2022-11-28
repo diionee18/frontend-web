@@ -17,14 +17,14 @@ body {
 
 /* Här börjar headern */
 nav{
-  background: #0191B3 ;
+  background: #1B2A41 ;
   height: 80px;
   width: 100%;
   z-index: 1;
 }
 
 label.logo{
-  color: #3F2B58 ;
+  color: #DB8622 ;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
@@ -50,7 +50,7 @@ nav ul li a{
 }
 
 a.active,a:hover{
-  background:#3F2B58 ;
+  background:#DB8622 ;
   transition: .5s;
 }
 
@@ -66,33 +66,39 @@ a.active,a:hover{
 #check{
   display: none;
 }
-
+header{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #DB8622;
+  height: 30vh;
+}
 .below-header{
   display: block;
-  text-align: center;
-  background-color: #3F2B58;
+  position: relative;
+  top: 2em;
+  text-align: center;  
   color:white;
   font-size: 14px;
-  padding-top: 1em;
-  padding-bottom: 1em;
 }
 
+.info-header{
+  display: block;
+  position: relative;
+  top: 4em;
+  text-align: center;
+
+}
 
 
 /* Här slutar header */
 
 /* Här börjar innehållet */
 
-/*main{
-   width: 100%; 
-   height: 100vh;
-  background:url(/bilder/Meteor.svg) ;
-  background-size: cover;
-  background-color: #3F2B58;
-}*/
+
 
 .wrapper {
-  background-color: green;
   width: 100%;
   height: 100vh;
 }
@@ -100,12 +106,13 @@ a.active,a:hover{
 .container{
   height: 100%;
   width: 100%;
+  margin-top: 10em;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-content: flex-start;
   flex-flow: wrap ;
   flex-shrink: 1;
-  color: white;
+  color: black;
   gap: 2em;
   overflow: visible;
   margin-bottom: 2em;
@@ -117,7 +124,7 @@ a.active,a:hover{
 .prod{
   background-image: url(/bilder/Meteor.svg);
   display: block;
-  border: 2px solid white;
+  border: 2px solid black;
   padding: 3em;
   /* min-height: 25%; */
 }
