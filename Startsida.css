@@ -1,0 +1,212 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,body{
+  font-family: montserrat;
+  margin:0;
+  padding:0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Här börjar headern */
+nav{
+  background: #0191B3 ;
+  height: 80px;
+  width: 100%;
+  z-index: 1;
+}
+
+label.logo{
+  color: #3F2B58 ;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold ;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin:  0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px ;
+  border-radius: 3px;
+}
+
+a.active,a:hover{
+  background:#3F2B58 ;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+.below-header{
+  display: block;
+  text-align: center;
+  background-color: #3F2B58;
+  color:white;
+  font-size: 14px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+
+
+/* Här slutar header */
+
+/* Här börjar innehållet */
+
+/*main{
+   width: 100%; 
+   height: 100vh;
+  background:url(/bilder/Meteor.svg) ;
+  background-size: cover;
+  background-color: #3F2B58;
+}*/
+
+.wrapper {
+  background-color: green;
+  width: 100%;
+  height: 100vh;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: wrap ;
+  flex-shrink: 1;
+  color: white;
+  gap: 2em;
+  overflow: visible;
+  margin-bottom: 2em;
+  min-height: 100vh;
+  /* background-color: green; */
+}
+
+
+.prod{
+  background-image: url(/bilder/Meteor.svg);
+  display: block;
+  border: 2px solid white;
+  padding: 3em;
+  /* min-height: 25%; */
+}
+
+.info-text{
+  padding-bottom: 5em;
+  border: 2px white solid;
+}
+ p{
+  width: 400px;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.rubrik{
+  display: block;
+  text-align: center;
+  /* position: relative; */
+  bottom: 4em;
+}
+
+/* Här slutar innehållet */
+
+@media (min-width:1043px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width:1043px){
+  .checkbtn{
+    display: block;
+  }
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:#3F2B58 ;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    margin-bottom: 0;
+  }
+  
+  nav{
+    overflow: none;
+    position: fixed;
+  }
+
+  nav ul li{
+    display: block;
+    margin:50px 0 ;
+    line-height: 30px;
+    
+  }
+  nav ul li a{
+    font-size: 24px;
+  }
+  a.active,a:hover{
+    background:none ;
+    color: #3191E7;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  /* .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    
+  }
+  .prod{
+    display: block;
+    position: relative;
+    height: ;
+ 
+  }
+  main{
+    background-repeat: repeat;
+    width: 100%;
+    height: 1000px;
+  } */
+}
+
