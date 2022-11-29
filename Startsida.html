@@ -13,8 +13,15 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&display=swap" rel="stylesheet"> 
     <title>Startsida</title>
   </head>
 
@@ -32,40 +39,111 @@
         <!-- <li><a href="#">Om Oss</a></li> -->
       </ul>
     </nav>
-    
-    <header>
+
+    <header class="första-header" >
       <div class="header">
-      <div class="below-header" >
-        <h1>Sveriges största kodings-Konferens</h1>
+        
+        <div class="below-header">
+          <h1>Sveriges största kodings-Konferens</h1>
+        </div>
+
+        <div class="info-header">
+          <h1>Vänta inte med att boka din biljett</h1>
+        </div>
+
       </div>
-      <div class="info-header">
-        <h1> Vänta inte med att boka din biljett </h1> 
-        <a href="https://www.google.se/?hl=sv" target="_blank"><button class="boka-knapp">Boka här!</button></a>
+
+      <div class="knapp-flex" >
+        <a class="knapp-a" href="https://www.google.se/?hl=sv" target="_blank">
+          <button class="boka-knapp">Boka här!</button>
+        </a>
       </div>
+
+    </header>
+
+    <div class="datum-header">
+      <h1>9-11 December 2022</h1>
+      <h1 class="mark"><i class="fa fa-map-marker"></i> KARLSTAD</h1>
     </div>
-  </header>
-  <div class="datum-header"> <h1 > 9-11 December 2022 </h1> <h1 class="mark" > <i class="fa fa-map-marker"></i> KARLSTAD </h1> </div>  
-    
 
-    <div class="wrapper">
-      <main class="container">
+    <section class="wrapper">
+      <div class="innehåll-talare">
+        <header>
+          <!-- <h1>Ett Inspirerande Tal &#65049; Dag 1, 9 Dec </h1>  -->
+          <h1> I denna Konferens får vi äran att se dessa talare på Scen&#65049;</h1> 
+        </header>
+        <div class="row" >
+          <section class="feature" >
+            <img class="bildwho" src="/desktop-tutorial/Talare/hanselman.png" alt="">
+            <div class="vemnamn" > Henrik Larsson</div>
+            <div class="yrke"> Grundaren till det stora företaget WeCode </div>
+          </section>
 
-        <article class="prod-habir prod">
-          <h1 class="rubrik">9/12</h1>
-          <div class="info-text"> 
-          </div>
-        </article>
+          <section class="feature" >
+            <img class="bildwho" src="/desktop-tutorial/Talare/jb_vec.png" alt="">
+            <div class="vemnamn" > Lukas Lidman</div>
+            <div class="yrke"> Mjukvarucoach, mentor och konsult, TDD Trainer  </div>
+          </section>
 
-        <article class="prod-snart prod">
-          <h1 class="rubrik">10/12</h1>
-        </article>
+          <section class="feature" >
+            <img class="bildwho" src="/desktop-tutorial/Talare/jnb_vec.png" alt="">
+            <div class="vemnamn" > Erik Lund</div>
+            <div class="yrke"> Principal Technologist @ VMWare, Trainer </div>
+          </section>
 
-        <article class="prod-israf prod">
-          <h1 class="rubrik">11/12</h1>
-        </article>
+          <section class="feature" >
+            <img class="bildwho" src="/desktop-tutorial/Talare/kevie.png" alt="">
+            <div class="vemnamn" > Hugo Mård</div>
+            <div class="yrke"> VP Engineering och Chief Architect @ eBay, tidigare chef för Engineering @ Google </div>
+          </section>
 
-      </main>
-    </div>
-      
+          <section class="feature" >
+            <img class="bildwho" src="/desktop-tutorial/Talare/mary.png" alt="">
+            <div class="vemnamn" > Maria Öst</div>
+            <div class="yrke"> Chief Architect @ Amazon </div>
+          </section>
+
+          <section class="feature" >
+            <img class="bildwho" src="/desktop-tutorial/Talare/pilo.png" alt="">
+            <div class="vemnamn" > Lukas Rud</div>
+            <div class="yrke"> VP Engineering @ Klarna </div>
+          </section>
+
+          <section class="feature" >
+            <img class="bildwho" src="/desktop-tutorial/Talare/randy_150x150.png" alt="">
+            <div class="vemnamn" > Rolf Gren</div>
+            <div class="yrke"> UX/UI Chef @ Google </div>
+          </section>
+
+          <section class="feature" >
+            <img class="bildwho" src="/desktop-tutorial/Talare/sveta_vec.png" alt="">
+            <div class="vemnamn" > Linda Malm</div>
+            <div class="yrke"> Chief Architect @ Youtube </div>
+          </section>
+
+          <section class="feature" >
+            <img class="bildwho" src="/desktop-tutorial/Talare/unclebobvec.png" alt="">
+            <div class="vemnamn" > Anders Ring</div>
+            <div class="yrke"> VP Engineering och Chief Architect @ EA Sport, </div>
+          </section>
+
+          <section class="feature" >
+            <img class="bildwho" src="/desktop-tutorial/Talare/venk_vec.png" alt="">
+            <div class="vemnamn" > Albert Ling</div>
+            <div class="yrke"> VP Engineering @ Instagram, tidigare chef för Engineering @ Amazon </div>
+          </section>
+          
+        </div>
+
+        <!-- <div class="wrapper">
+          <main class="container">
+            <article class="prod-habir prod">
+              <h1 class="rubrik">9/12</h1>
+              <div class="info-text"></div>
+            </article>
+          </main>
+        </div>
+      </div>
+    </section> -->
   </body>
 </html>
