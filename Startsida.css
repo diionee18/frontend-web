@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
 }
 
-/* Här börjar headern */
+/* Här börjar nav-headern */
 nav{
   background: #1B2A41 ;
   height: 80px;
@@ -67,9 +67,11 @@ a.active,a:hover{
 #check{
   display: none;
 }
+/* Här slutar nav-headern */
 
 
 
+/* Här börjar Headern under nav-headern  */
 .första-header{
   /* background-color: #DB8622; */
   background-image: url(/desktop-tutorial/Meteor2.svg);
@@ -128,11 +130,6 @@ a.active,a:hover{
   gap: 2em;
 }
 
-.knapp-flex{
-
-}
-
-
 .boka-knapp{
   position: relative;
   top: 4em;
@@ -151,11 +148,11 @@ a.active,a:hover{
 .knapp-a:hover{
   background: none;
 }
-/* Här slutar header */
+/* Här slutar Headern under nav-headern  */
 
 
 
-/* Här börjar innehållet för talarna */
+/* Här börjar talarna */
 
 header>h1{
   padding-top: 1%;
@@ -190,14 +187,14 @@ header>h1{
   font-size: 16px;
 }
 
-/* Här slutar innehållet för talarna */
+/* Här slutar talarna */
 
 
 
 
 
 
-/* Här börjar innehållet för dagarna */
+/* Här börjar "Hur kommer dagen se ut"  */
 .hela-dagen{
   background-color: #DB8622;
   width: 100%;
@@ -226,6 +223,7 @@ header>h1{
   padding-bottom: 4em;
   padding-left: 2em;
   padding-right: 2em;
+  text-align: center;
 }
 
 .dag{
@@ -235,9 +233,6 @@ header>h1{
   margin-left: 2%;
 }
 .händelse{
-  /* text-align: center; */
-  /* border-bottom: 2px solid #1B2A41; */
-  /* border-left: 2px solid #1B2A41; */
   line-height: calc(1rem + 2em);
   padding-left: 2em;
   padding-right: 2em;
@@ -257,7 +252,7 @@ header>h1{
 hr{
   border-color: #1B2A41;
 }
-/* Här slutar innehållet */
+/* Här slutar "Hur kommer dagen se ut"  */
 
 
 
@@ -269,10 +264,18 @@ hr{
 }
 
 @media (max-width:1043px){
+  
   label.logo{
-    position: fixed;
+    display: none;
+    /* position: absolute; */
     padding-right: 2em;
     margin-bottom: 2em;
+    
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .container{
     
   }
   .checkbtn{
