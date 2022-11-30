@@ -163,14 +163,20 @@ header>h1{
   
 }
 
+.feature{
+  padding-bottom: 4em;
+}
+
+
 .row{
   display: flex;
   justify-content: center;
   text-align: center;
   gap: 3em;
   flex-wrap: wrap;
-  padding-top: 3em;
-  padding-bottom: 3em ;
+  padding-top: 5em;
+  /* padding-bottom: 5em ; */
+  margin-bottom: 5em;
   padding-left: 5em;
   padding-right: 5em;
 }
@@ -187,6 +193,15 @@ header>h1{
   font-size: 16px;
 }
 
+.bildwho{
+  transition: 1.2s;
+}
+.bildwho:hover{
+  transform: scale(1.5);
+  padding-bottom: 1em;
+  
+}
+
 /* Här slutar talarna */
 
 
@@ -200,7 +215,7 @@ header>h1{
   width: 100%;
 }
 
-.dagen-info{
+.dagen-header{
   font-family: manrope;
   font-size: 40px;
   font-weight: 400;
@@ -208,7 +223,6 @@ header>h1{
   padding-bottom: 0.4em;
   color: white;
   text-align: center;
-  /* border: 2px solid white; */
   background-color: #1B2A41;
 }
 
@@ -217,9 +231,9 @@ header>h1{
   justify-content: center;
   align-content: center;
   flex-flow: wrap ;
+  flex-direction: column;
   color: white;
   gap: 5em;
-  margin-bottom: 2em;
   padding-bottom: 4em;
   padding-left: 2em;
   padding-right: 2em;
@@ -233,25 +247,33 @@ header>h1{
   margin-left: 2%;
 }
 .händelse{
-  line-height: calc(1rem + 2em);
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 1em;
-  font-size: 25px;
+  /* line-height: calc(1rem + 2em); */
+  line-height: 1.8em;
+  padding: 1em;
+  border: 2px solid ;
+  border-color: #1B2A41;
+  border-width: 0.4em;
+  font-size: 20px;
+  box-shadow:  1em 1em 1em rgb(75, 73, 73);
+}
+
+.dagen-info{
   
-}
-.sista{
-  border-left: 3px solid #1B2A41;
-  position: relative;
-  bottom: 1em;
-}
-.första{
-  border-right: 3px solid #1B2A41;
+
 }
 
 hr{
   border-color: #1B2A41;
+  border-width: 2px;
+  transition: border-color 1s;
 }
+
+
+.dagen-info>p{
+  padding-bottom: 2em;
+}
+
+
 /* Här slutar "Hur kommer dagen se ut"  */
 
 
