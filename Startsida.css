@@ -68,10 +68,13 @@ a.active,a:hover{
   display: none;
 }
 
+
+
 .första-header{
   /* background-color: #DB8622; */
-  background-image: url(/desktop-tutorial/Circuit\ Primary.svg);
+  background-image: url(/desktop-tutorial/Meteor2.svg);
   background-size: cover;
+  /* background-color: #ebe7db; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -83,7 +86,6 @@ a.active,a:hover{
 }
 
 .header{
-  height: 100%;
 }
 .below-header{
   font-size: calc(1rem + 1vw);
@@ -94,8 +96,11 @@ a.active,a:hover{
   float: left;
   top: 1em;
   padding: 1em;
+  border-bottom-right-radius: 10px;
+   border-top-right-radius: 10px;
 } 
 .info-header{
+  font-size: calc(1rem + 1vw);
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -104,8 +109,9 @@ a.active,a:hover{
   background-color: #DB8622;
   float: right;
   padding: 1em;
-  border-radius: 10px;
-  margin-right: 2%;
+   border-bottom-left-radius: 10px;
+   border-top-left-radius: 10px;
+  /* margin-right: 2%;  */
 
 }
 
@@ -157,16 +163,19 @@ header>h1{
   font-size: calc(1.4rem + 1vw);
   font-family: manrope ;
   color: grey;
+  
 }
 
 .row{
   display: flex;
   justify-content: center;
   text-align: center;
-  gap: 2em;
+  gap: 3em;
   flex-wrap: wrap;
   padding-top: 3em;
   padding-bottom: 3em ;
+  padding-left: 5em;
+  padding-right: 5em;
 }
 
 .vemnamn{
@@ -181,7 +190,6 @@ header>h1{
   font-size: 16px;
 }
 
-
 /* Här slutar innehållet för talarna */
 
 
@@ -190,52 +198,65 @@ header>h1{
 
 
 /* Här börjar innehållet för dagarna */
-.wrapper {
+.hela-dagen{
+  background-color: #DB8622;
   width: 100%;
+}
 
+.dagen-info{
+  font-family: manrope;
+  font-size: 40px;
+  font-weight: 400;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  color: white;
+  text-align: center;
+  /* border: 2px solid white; */
+  background-color: #1B2A41;
 }
 
 .container{
-  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-flow: wrap ;
-  flex-shrink: 1;
   color: white;
-  gap: 2em;
-  overflow: visible;
+  gap: 5em;
   margin-bottom: 2em;
-  /* background-image: url(/desktop-tutorial/Circuit\ Primary.svg);
-  background-size: cover; */
-  background-color: #e7b617;
-  padding-top: 4em;
   padding-bottom: 4em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
-
-.prod{
-  padding-top: 10em;
-  display: block;
-  border: 2px solid white;
-  padding: 10em;
-}
-
-.info-text{
-  padding-bottom: 5em;
-}
- p{
-  width: 400px;
+.dag{
+  padding: 2em;
   text-align: center;
-  margin-top: 2em;
+  font-size: 40px;
+  margin-left: 2%;
+}
+.händelse{
+  /* text-align: center; */
+  /* border-bottom: 2px solid #1B2A41; */
+  /* border-left: 2px solid #1B2A41; */
+  line-height: calc(1rem + 2em);
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  font-size: 25px;
+  
+}
+.sista{
+  border-left: 3px solid #1B2A41;
+  position: relative;
+  bottom: 1em;
+}
+.första{
+  border-right: 3px solid #1B2A41;
 }
 
-.rubrik{
-  display: block;
-  text-align: center;
-  bottom: 4em;
+hr{
+  border-color: #1B2A41;
 }
-
 /* Här slutar innehållet */
 
 
