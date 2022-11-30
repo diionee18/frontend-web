@@ -273,6 +273,10 @@ hr{
   padding-bottom: 2em;
 }
 
+strong{
+  color: black;
+  padding-right: em;
+}
 
 /* Här slutar "Hur kommer dagen se ut"  */
 
