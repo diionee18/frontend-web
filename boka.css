@@ -18,7 +18,7 @@ body {
 
 /* Här börjar nav-headern */
 nav{
-  position: fixed;
+  /* position: fixed; */
   background: #1B2A41 ;
   height: 80px;
   width: 100%;
@@ -69,6 +69,38 @@ a.active,a:hover{
   display: none;
 }
 /* Här slutar nav-headern */
+
+
+.boka{
+  width: 100%;
+}
+
+.boka-wrapper{
+  background-color: white;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
