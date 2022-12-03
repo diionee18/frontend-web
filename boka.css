@@ -18,7 +18,7 @@ body {
 
 /* Här börjar nav-headern */
 nav{
-  /* position: fixed; */
+  /* position: sticky; */
   background: #1B2A41 ;
   height: 80px;
   width: 100%;
@@ -71,36 +71,119 @@ a.active,a:hover{
 /* Här slutar nav-headern */
 
 
-.boka{
+.hela-formen{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(115deg, rgb(221, 219, 219), #1B2A41);
+  
+}
+
+
+.innehåll{
+  max-width: 700px;
   width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  background-color: #1B2A41;
+  box-shadow: 2em 2em 10em rgb(179, 175, 175);
 }
 
-.boka-wrapper{
-  background-color: white;
+.innehåll .titel{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'poppins',sans-serif;
+  position: relative;
+  color: white;
 }
- 
 
+.innehåll form .user-details{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
 
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2- 20px);
+}
+.user-details .input-box .details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
 
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline:none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
 
+.user-details{
+  color: white;
+}
 
+label{
+  color: white;
+}
 
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color:white ;
+  
+}
 
+.text-önskemål{
+  margin-bottom: 3px;
+}
 
+.wrapper-önskemål{
+  margin-bottom: 10px;
+}
 
+textarea{
+  width: 100%;
+  padding-top: 3px;
+  padding-left: 3px;
+  font-family: 'poppin', sans-serif;
+  
+}
 
+.val{
+margin-right: 1em;
+}
 
+.button{
+  display:flex ;
+  justify-content: center;
+  margin: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.button-innehåll{
+  border: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 5px;
+  color: #1B2A41;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #DB8622;
+  cursor: pointer;
+}
 
 
 
@@ -113,7 +196,13 @@ a.active,a:hover{
 }
 
 @media (max-width:1043px){
-  
+  .innehåll{
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
   .grid-sponsor{
     padding-top: 4em;
     padding-bottom: 4em;
@@ -158,7 +247,7 @@ a.active,a:hover{
   
   nav{
     overflow: none;
-    position: fixed;
+    /* position: fixed; */
   }
 
   nav ul li{
