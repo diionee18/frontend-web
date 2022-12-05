@@ -65,7 +65,7 @@
           </div>
         </div>
           <label for="dagar">Vilka dagar vill du anmäla dig för?</label>
-          <select name="dagar" id="dagar" >
+          <select  id="dagar" >
             <option class="datum-rutan" value="Alla dagar" >Alla dagar</option>
             <option class="datum-rutan" value="9/12">9/12</option>
             <option class="datum-rutan" value="10/12">10/12</option>
@@ -73,19 +73,20 @@
             
           </select>
           <br><br>
-        <div class="wrapper-önskemål">
-          <p class="text-önskemål"> <label for="önskemål">Speciell kost eller alergisk mot något?</label></p>
-          <label for="ja">Ja</label>
+          <div class="wrapper-önskemål">
+          <p class="text-önskemål"> <label for="önskemål">Speciell kost eller alergisk mot något? (Om inte, så kan du gå vidare)</label></p>
+          <label class="ja" for="ja">Ja</label>
           <input class="val" id="ja" name="ja" type="checkbox" > 
+          
+          <textarea name="önskemål" id="önskemål" cols="40" rows="10" placeholder="Här kan du skriva ifall du vill att vi ska veta något i förväg, t.ex att du är laktosintolerans."></textarea>
       
-          <label for="nej">Nej</label>
-          <input class="val" id="nej" name="nej" type="checkbox"> 
         </div>  
         <div class="wish">
-         <textarea name="önskemål" id="önskemål" cols="40" rows="10" placeholder="Här kan du skriva ifall du vill att vi ska veta något i förväg, t.ex att du är laktosintolerans."></textarea>
+          <div>
         </div>
 
         <div class="button">
+        
           <input  class="button-innehåll" type="submit" value="Anmäl dig">
 
         </div>

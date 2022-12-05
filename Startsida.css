@@ -398,7 +398,7 @@ footer{
   
 }
 
-@media (max-width:635px){
+@media (max-width:1043px){
   .map-wrapper{
     width: 100%;
   }
