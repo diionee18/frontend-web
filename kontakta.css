@@ -189,11 +189,11 @@ label{
 
 }
 .user-details .input-box input:valid{
-  background: url('https://webdevtrick.com/wp-content/uploads/check-icon.svg');
-  background-size: 20px;
-	background-repeat: no-repeat;
-	background-position: right;
-  color: white;
+  border-color: green;
+  border-width: 0.6em;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
 }
 
 
