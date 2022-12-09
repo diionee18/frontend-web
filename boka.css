@@ -74,6 +74,7 @@ a.active,a:hover{
 
 
 .hela-formen{
+  padding-bottom: 2em;
   padding-top: 2em;
   display: flex;
   flex-direction: row;
@@ -94,6 +95,7 @@ a.active,a:hover{
 }
 
 .innehåll .titel{
+  padding-bottom: 1em;
   text-align: center;
   font-size: 25px;
   font-weight: 500;
@@ -107,7 +109,7 @@ a.active,a:hover{
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0 12px 0;
+  /* margin: 20px 0 12px 0; */
 }
 .user-details .input-box input:invalid{
   border-color:red ;
@@ -157,7 +159,6 @@ label{
 
 
 select#dagar{
-  
   margin-left: 0.4em;
   padding-left: 10px;
   padding-right: 10px;
@@ -170,6 +171,7 @@ select#dagar{
 
 .text-önskemål{
   margin-bottom: 8px;
+
 }
 
 .wrapper-önskemål{
@@ -208,6 +210,7 @@ margin-right: 1em;
 }
 
 .button-innehåll{
+  margin-top: 1em;
   border: none;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -223,6 +226,18 @@ margin-right: 1em;
 input[type="submit"]:hover,
 input[type="checkbox"]:hover{
   cursor: pointer;
+}
+
+.header-önskemål{
+  margin-bottom: 1em;
+  background-color: #DB8622;
+  color: #1B2A41;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* Här slutar formuläret */
@@ -243,7 +258,6 @@ input[type="checkbox"]:hover{
 
   .innehåll{
     width: 100%;
-    height: 100vh;
     box-shadow: none;
     border-radius: 0;
   }
