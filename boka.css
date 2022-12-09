@@ -233,6 +233,8 @@ input[type="checkbox"]:hover{
   background-color: #DB8622;
   color: #1B2A41;
   text-align: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   padding-top: 1em;
   padding-bottom: 1em;
   border-radius: 10px;
